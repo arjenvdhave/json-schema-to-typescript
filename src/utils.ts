@@ -1,6 +1,6 @@
-import {deburr, isPlainObject, mapValues, trim, upperFirst} from 'lodash'
-import {basename, dirname, extname, join, normalize, sep} from 'path'
-import {JSONSchema, LinkedJSONSchema} from './types/JSONSchema'
+import { deburr, isPlainObject, mapValues, trim, upperFirst } from 'lodash'
+import { basename, dirname, extname, join, normalize, sep } from 'path'
+import { JSONSchema, LinkedJSONSchema } from './types/JSONSchema'
 
 // TODO: pull out into a separate package
 // eslint-disable-next-line
@@ -175,7 +175,7 @@ export function toSafeString(string: string) {
   // identifiers in javaScript/ts:
   // First character: a-zA-Z | _ | $
   // Rest: a-zA-Z | _ | $ | 0-9
-
+  console.log("JOHAN",string);
   return upperFirst(
     // remove accents, umlauts, ... by their basic latin letters
     deburr(string)
